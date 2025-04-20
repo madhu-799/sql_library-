@@ -39,7 +39,7 @@ branch_address varchar(50),
 contact_no varchar(50)
 );
 select * from library.branch
-----
+
 -- Create table "Employee"
 DROP TABLE IF EXISTS employees;
 CREATE TABLE employees
@@ -57,7 +57,7 @@ with (firstrow=2 ,
 fieldterminator =',',
 tablock )
 
------
+
 -- Create table "Members"
 if object_id ('library.members  ', 'u')  is not null 
  drop table library.members  
@@ -81,7 +81,7 @@ WITH (
 
 select * from  library. members;
 
------
+
 -- Create table "Books"
 if object_id ('library.books ', 'u')  is not null 
  drop table library.books 
@@ -109,7 +109,7 @@ WITH (
 select * from library.books;
 
 
-----
+
 -- Create table "IssueStatus"
 if object_id ('library.issued_status ', 'u')  is not null 
  drop table library.issued_status 
@@ -137,7 +137,7 @@ WITH (
 select * from  library.issued_status ;
 
 
------
+
 -- Create table "ReturnStatus"
 if object_id ('library.return_status   ', 'u')  is not null 
  drop table library.return_status   
